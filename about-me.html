@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Bootstrap 4 Website Example</title>
+  <title>Char Juin Chin</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -13,51 +13,69 @@
     li {
       padding-right: max(0px, 10%);
     }
-    .center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      width: 70%;
+
+    body,
+    html {
+      height: 100%;
+    }
+
+    .hero-image {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/images/large/cover_about-me.jpg");
+      height: 30%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+    .hero-text {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
     }
   </style>
 </head>
 
 <body style="background-color: #f0e6e4; font-family: Helvetica">
 
-  <div>
-    <img class="fill" src="assets/images/large/cover_about-me.jpg" alt="" style="width: 100%;">
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1 style="font-size:50px">Char Juin Chin</h1>
+      <p>University of California, Berkeley</p>
+    </div>
   </div>
 
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <a class="navbar-brand" href="index.html">Home</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <nav-li class="navbar-item">
-          <a class="nav-link" href="about-me.html">About Me</a>
-        </nav-li>
-        <nav-li class="navbar-item">
-          <a class="nav-link" href="https://github.com/chincharjuin">Repositories</a>
-        </nav-li>
-        <nav-li class="navbar-item">
-          <a class="nav-link" href="publications.html">Publications</a>
-        </nav-li>
-        <nav-li class="navbar-item">
-          <a class="nav-link" href="assets/pdf/chincharjuin_resume.pdf">Resume</a>
-        </nav-li>
-      </ul>
-    </div>
-  </nav>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <nav-li class="navbar-item">
+            <a class="nav-link" href="about-me.html">About Me</a>
+          </nav-li>
+          <nav-li class="navbar-item">
+            <a class="nav-link" href="https://github.com/chincharjuin">Repositories</a>
+          </nav-li>
+          <nav-li class="navbar-item">
+            <a class="nav-link" href="publications.html">Publications</a>
+          </nav-li>
+          <nav-li class="navbar-item">
+            <a class="nav-link" href="assets/pdf/chincharjuin_resume.pdf">Resume</a>
+          </nav-li>
+        </ul>
+      </div>
+    </nav>
 
-  <div class="container" style="margin-top:30px; margin-bottom:70px">
+  <div class="container" style="margin-top:30px; text-align:justify; margin-bottom:70px; width:70%">
     <div class="row">
       <div>
         <h1 style="font-size: 50px;"><b>About Me</b></h1>
-        <img class="center" src="assets/images/personal/chincharjuin.jpg">
+        <img class="center" src="assets/images/personal/chincharjuin.jpg" width="100%" style="margin-bottom:20px">
         <p>
           Hi! I am Char Juin, a sophomore at University of California, Berkeley! I am studying for my BA in Computer Science and Linguistics, with potentially a Data Science minor as well.
         </p>
@@ -78,7 +96,7 @@
           I am bilingual in English and Chinese, am currently self-studying Japanese, and taking also French classes at university.
         </p>
         <p>
-          For exercise, I enjoy running and hiking, having had the opportunity to travel to Nepal in February 2020 right before the pandemic struck! In my free time, I enjoy brewing coffee, playing the guitar, video games, and reading manga.
+          To exercise, I enjoy running and hiking, having had the opportunity to travel to Nepal in February 2020 right before the pandemic struck! In my free time, I enjoy brewing coffee, playing the guitar, video games, and reading manga.
         </p>
         <br>
       </div>
